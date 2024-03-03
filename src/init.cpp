@@ -37,7 +37,7 @@ namespace Gotobed
 		SettingsPapyrus::Register();
 
 		auto serialization = SKSE::GetSerializationInterface();
-		serialization->SetUniqueID(1);
+		serialization->SetUniqueID(0x360FC0D6);
 		serialization->SetSaveCallback(OnSave);
 		serialization->SetLoadCallback(OnLoad);
 	}

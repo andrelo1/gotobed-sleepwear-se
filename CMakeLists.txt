@@ -8,7 +8,7 @@ find_package(CommonLibSSE REQUIRED)
 find_package(Detours REQUIRED)
 find_package(nlohmann_json REQUIRED)
 
-configure_file(cmake/version.h.in version.h)
+configure_file(cmake/plugin.h.in plugin.h)
 configure_file(cmake/version.rc.in version.rc)
 
 add_library("${PROJECT_NAME}" SHARED)
@@ -42,7 +42,7 @@ target_sources("${PROJECT_NAME}"
 	src/Settings.h
 	src/SettingsPapyrus.cpp
 	src/SettingsPapyrus.h
-	"${PROJECT_BINARY_DIR}/version.h"
+	"${PROJECT_BINARY_DIR}/plugin.h"
 	"${PROJECT_BINARY_DIR}/version.rc"
 )
 
